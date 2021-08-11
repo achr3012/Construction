@@ -50,7 +50,7 @@ header.header
           margin-top: 20px
           width: 200px
 
-  #mainMenu
+  nav#mainMenu
     display: none
     background-color: $black-color
     position: fixed
@@ -85,3 +85,35 @@ header.header
 
   .hero
     margin-top: 55px
+    
+    background-image: url(../images/home-parallax.jpg)
+    background-size: cover
+    background-attachment: fixed
+    background-position: center
+    padding-bottom: .1px
+    text-align: center
+    color: #fff
+    .div
+      padding: 4rem 0 3rem 0
+      @media (min-width: $layout-breakpoint-small)
+        padding-bottom: 0
+      h1
+        font-weight: 300
+      p.big
+        font-weight: 700
+      p.small
+        display: none
+        padding: 1rem 0
+        @media (min-width: $layout-breakpoint-small)
+          display: block
+   
+    .btn
+      display: block
+      padding: 1rem
+      width: 200px
+      margin: 1rem auto
+      @media (min-width: $layout-breakpoint-small)
+        display: inline-block
+        margin: 1rem .5rem 3rem .5rem
+        width: auto
+        padding: 1rem 2rem
