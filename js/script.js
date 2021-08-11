@@ -1,4 +1,4 @@
-var mainMenu = document.getElementById("mainMenu");
+let mainMenu = document.getElementById("mainMenu");
 function toggleMainMenu(x) {
   x.classList.toggle("changed");
   if (mainMenu.style.display === "block") {
@@ -8,12 +8,3 @@ function toggleMainMenu(x) {
   }
 }
 
-
-/***
- * 
- * 
- *
-var menuHeight = document.querySelector("header nav .container").offsetHeight,
-    hero = document.querySelector("header .hero");
-hero.style.marginTop = menuHeight + "pxpx
-*/

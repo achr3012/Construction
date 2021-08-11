@@ -3,7 +3,7 @@
 
 $base-color: #ffad00
 $black-color: #121212
-$white-color: #E1E8EB
+$white-color: #888a8c
 
 *
   box-sizing: border-box
@@ -17,12 +17,20 @@ $white-color: #E1E8EB
 .clearfix
   clear: both
 
+.show
+  display: block !important
+.hide
+  display: none
+
 img
   width: 100%
   user-select: none
 
 a, button
   -webkit-tap-highlight-color: transparent
+
+ul
+  list-style: none
 
 input, textarea
   &:hover, &:focus
@@ -33,7 +41,7 @@ body
   font-size: 15px
   font-weight: 400
   height: 1000px
-  color: #888a8c
+  color: $white-color
   
   
 @import templates/header

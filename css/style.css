@@ -14,6 +14,14 @@
   clear: both;
 }
 
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none;
+}
+
 img {
   width: 100%;
   user-select: none;
@@ -21,6 +29,10 @@ img {
 
 a, button {
   -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
 }
 
 input:hover, input:focus, textarea:hover, textarea:focus {
@@ -35,29 +47,26 @@ body {
   color: #888a8c;
 }
 
-header.header nav {
+header.header nav.mainNav {
   position: fixed;
-  background: rgba(18, 18, 18, 0.3);
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
-}
-header.header .mainNav {
   background-color: #121212;
   height: 55px;
-  width: 100%;
 }
-header.header .mainNav .left {
+header.header nav.mainNav .left {
   float: left;
   width: 12%;
 }
-header.header .mainNav .left button {
+header.header nav.mainNav .left button {
   width: 100%;
   border: none;
   height: 42px;
   margin-top: 8px;
   background-color: rgba(255, 255, 255, 0);
 }
-header.header .mainNav .left button .bar1, header.header .mainNav .left button .bar2, header.header .mainNav .left button .bar3 {
+header.header nav.mainNav .left button .bar1, header.header nav.mainNav .left button .bar2, header.header nav.mainNav .left button .bar3 {
   width: 85%;
   max-width: 40px;
   height: 6px;
@@ -65,57 +74,65 @@ header.header .mainNav .left button .bar1, header.header .mainNav .left button .
   margin: 6px auto;
   transition: 0.2s;
 }
-header.header .mainNav .left button i {
+header.header nav.mainNav .left button i {
   font-size: 1.7em;
   padding: 10px 0;
   color: #fff;
 }
-header.header .mainNav .changed .bar1 {
+header.header nav.mainNav .changed .bar1 {
   transform: rotate(-45deg) translate(-8px, 8px);
 }
-header.header .mainNav .changed .bar2 {
+header.header nav.mainNav .changed .bar2 {
   opacity: 0;
 }
-header.header .mainNav .changed .bar3 {
+header.header nav.mainNav .changed .bar3 {
   transform: rotate(45deg) translate(-8px, -8px);
 }
-header.header .mainNav .logo {
+header.header nav.mainNav .logo {
   float: left;
   width: 76%;
 }
-header.header .mainNav .logo a {
+header.header nav.mainNav .logo a {
   display: inline-block;
   padding: 0 5px;
 }
-header.header .mainNav .logo a img {
+header.header nav.mainNav .logo a img {
   margin-top: 20px;
   width: 200px;
 }
 header.header #mainMenu {
-  display: block;
+  display: none;
   background-color: #121212;
-  color: #ddd;
+  position: fixed;
+  top: 55px;
+  left: 0;
   width: 75%;
-  overflow: scroll;
-  list-style: none;
+  height: calc(100% - 55px);
   border: 5px solid #121212;
 }
-header.header #mainMenu > li:first-child a {
-  background-color: #fff;
+header.header #mainMenu > ul {
+  overflow: scroll;
+  height: 100%;
+}
+header.header #mainMenu > ul > li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 16px;
+}
+header.header #mainMenu > ul > li > a {
+  text-transform: uppercase;
   color: #ffad00;
 }
-header.header #mainMenu > li > a {
-  display: block;
-  padding: 15px;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
+header.header #mainMenu > ul > li:first-child a {
+  background-color: #fff;
 }
-header.header #mainMenu .sub {
-  margin-left: 40px;
+header.header #mainMenu > ul > li .sub {
+  margin-left: 30px;
+  display: none;
 }
-header.header #mainMenu .sub a {
-  color: #E1E8EB;
+header.header #mainMenu > ul > li .sub a {
+  color: #888a8c;
 }
 header.header .hero {
   margin-top: 55px;

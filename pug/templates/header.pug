@@ -1,6 +1,5 @@
 header.header
-  nav
-    .mainNav
+  nav.mainNav
       .container
         .left
           button(onclick="toggleMainMenu(this)")
@@ -14,12 +13,13 @@ header.header
           button
             i.fas.fa-ellipsis-v
         .clearfix
-    ul#mainMenu
+  nav#mainMenu
+    ul
       li
         a(href="#") Home
       li
         a(href="#") Elements
-        ul.sub
+        ul.sub.show
           li
             a(href="#") Tabs & accordions
           li

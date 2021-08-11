@@ -12,27 +12,27 @@
   <body>
     <!-- https://livedemo00.template-help.com/wt_58533/-->
     <header class="header">
-      <nav>
-        <div class="mainNav">
-          <div class="container">
-            <div class="left">
-              <button onclick="toggleMainMenu(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </button>
-            </div>
-            <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-            <div class="left">
-              <button><i class="fas fa-ellipsis-v"></i></button>
-            </div>
-            <div class="clearfix"></div>
+      <nav class="mainNav">
+        <div class="container">
+          <div class="left">
+            <button onclick="toggleMainMenu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </button>
           </div>
+          <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+          <div class="left">
+            <button><i class="fas fa-ellipsis-v"></i></button>
+          </div>
+          <div class="clearfix"></div>
         </div>
-        <ul id="mainMenu">
+      </nav>
+      <nav id="mainMenu">
+        <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Elements</a>
-            <ul class="sub">
+            <ul class="sub show">
               <li><a href="#">Tabs & accordions</a></li>
               <li><a href="#">Typography</a></li>
               <li><a href="#">Forms</a></li>
