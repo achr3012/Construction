@@ -1,4 +1,4 @@
-let mainMenu = document.getElementById("mainMenu");
+const mainMenu = document.getElementById("mainMenu");
 function toggleMainMenu(x) {
   x.classList.toggle("changed");
   if (mainMenu.style.display === "block") {
@@ -8,3 +8,13 @@ function toggleMainMenu(x) {
   }
 }
 
+const links = document.querySelectorAll("#mainMenu > ul > li > a");
+links.forEach(function(link) { 
+  link.onclick = function () {
+    let ulStyle = this.nextElementSibling.style;
+    if (ulStyle.display === "block")
+      ulStyle.display = "none";
+    else 
+      ulStyle.display = "block";
+  };
+}); 

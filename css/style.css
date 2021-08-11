@@ -127,11 +127,11 @@ header.header #mainMenu > ul > li > a {
 header.header #mainMenu > ul > li:first-child a {
   background-color: #fff;
 }
-header.header #mainMenu > ul > li .sub {
+header.header #mainMenu > ul > li ul {
   margin-left: 30px;
   display: none;
 }
-header.header #mainMenu > ul > li .sub a {
+header.header #mainMenu > ul > li ul a {
   color: #888a8c;
 }
 header.header .hero {
