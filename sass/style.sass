@@ -15,6 +15,8 @@ $layout-breakpoint-small: 768px
 .container
   max-width: 90%
   margin: 0 auto
+  @media (min-width: $layout-breakpoint-small)
+    max-width: 80%
 
 .clearfix
   clear: both
@@ -57,10 +59,14 @@ body
   font-family: 'Raleway', sans-serif
   font-size: 15px
   font-weight: 400
-  height: 1000px
   color: $white-color
   @media (min-width: $layout-breakpoint-small)
-    font-size: .78em
+    font-size: .4em
+
+section
+  padding: 2rem 0
   
   
 @import templates/header
+@import templates/about
+@import templates/stats

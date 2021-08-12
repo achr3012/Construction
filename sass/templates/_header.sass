@@ -5,16 +5,15 @@ header.header
     top: 0
     left: 0
     width: 100%
- 
     background-color: $black-color
     height: 55px
+    z-index: 1
     
     .left
       float: left
       width: 12%
       button
         width: 100%
-        
         border: none
         height: 42px
         margin-top: 8px
@@ -60,7 +59,8 @@ header.header
     height: calc(100% - 55px)
     border: 5px solid $black-color
     
-    
+    @media (min-width: $layout-breakpoint-small)
+      width: 30%
     
     & > ul
       overflow: scroll
