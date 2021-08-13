@@ -261,29 +261,29 @@ section.about .col p {
   line-height: 1.7;
 }
 
-section.stats {
+section.info {
   background: #ffad00;
   color: #fff;
 }
-section.stats .row {
+section.info .row {
   text-align: center;
   padding: 1rem 0;
 }
 @media (min-width: 768px) {
-  section.stats .row {
+  section.info .row {
     float: left;
     width: 50%;
     font-size: 1.5rem;
   }
-  section.stats .row .small {
+  section.info .row .small {
     font-size: 1.1rem;
   }
 }
-section.stats .row .big {
+section.info .row .big {
   font-size: 3em;
   font-weight: 300;
 }
-section.stats .row .small {
+section.info .row .small {
   font-weight: 700;
   text-transform: uppercase;
 }
