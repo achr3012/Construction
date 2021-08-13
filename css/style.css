@@ -289,22 +289,22 @@ section.info .row .small {
   text-transform: uppercase;
 }
 
-.services .secTitle, .services section.about .col h3, section.about .col .services h3 {
+section.services .secTitle, section.services section.about .col h3, section.about .col section.services h3 {
   padding-bottom: 0;
 }
 @media (min-width: 768px) {
-  .services img {
+  section.services img {
     height: 650px;
     width: auto;
     margin: 0 auto 1rem auto;
     display: block;
   }
 }
-.services .service {
+section.services .service {
   text-align: center;
   padding: 2rem 0;
 }
-.services .service .icon {
+section.services .service .icon {
   display: inline-block;
   margin: 0.3rem 0;
   background: #ffad00;
@@ -315,23 +315,23 @@ section.info .row .small {
   width: 70px;
   height: 70px;
 }
-.services .service .icon i {
+section.services .service .icon i {
   padding-top: 1rem;
 }
-.services .service h3 {
+section.services .service h3 {
   padding: 1rem 0;
   font-weight: 400;
   color: #121212;
 }
-.services .service h3:hover {
+section.services .service h3:hover {
   color: #ffad00;
 }
-.services .service p {
+section.services .service p {
   padding: 0.5rem 0;
   line-height: 1.7;
 }
 @media (min-width: 768px) {
-  .services .service {
+  section.services .service {
     float: left;
     width: 50%;
     font-size: 1rem;
@@ -340,36 +340,86 @@ section.info .row .small {
   }
 }
 
-.stats {
+section.stats {
   background: rgba(136, 138, 140, 0.1);
 }
-.stats .stat {
+section.stats .stat {
   padding: 1rem 0;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .stats .stat {
+  section.stats .stat {
     float: left;
     width: 50%;
   }
 }
-.stats .stat .circle {
+section.stats .stat .circle {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 6px solid #ffad00;
   margin: 1rem auto;
 }
-.stats .stat .circle p {
+section.stats .stat .circle p {
   line-height: 200px;
   font-size: 2.6rem;
   color: #121212;
 }
-.stats .stat h4 {
+section.stats .stat h4 {
   text-transform: uppercase;
   font-weight: 400;
   padding-top: 1rem;
   font-size: 1.1rem;
+}
+
+section.blog .post {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  section.blog .post {
+    width: 50%;
+    float: left;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+}
+section.blog .post .title {
+  color: #121212;
+  text-decoration: none;
+  display: block;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+}
+section.blog .post .title h3 {
+  font-weight: 400;
+}
+section.blog .post .title:hover {
+  color: #ffad00;
+}
+section.blog .post p {
+  padding: 1rem 0;
+  line-height: 1.7;
+}
+section.blog .post .info {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+section.blog .post .info span {
+  padding: 0 0.5rem;
+}
+section.blog .post .info span i {
+  color: #ffad00;
+  padding: 0 5px;
+}
+section.blog .post .more {
+  color: #ffad00;
+  font-weight: 700;
+  text-decoration: none;
+}
+section.blog .post .more:hover {
+  color: #888a8c;
 }
 
 /*# sourceMappingURL=style.css.map */
