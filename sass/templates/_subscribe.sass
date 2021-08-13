@@ -1,0 +1,31 @@
+section.subscribe
+  background: url(../images/newsletter.jpeg)
+  background-size: cover
+  padding: 0
+  .overlay
+    background: linear-gradient(to bottom, rgba($base-color,.2), rgba($black-color,.7))
+    padding: 3rem 0
+    text-align: center
+  
+  h2, p
+    color: #fff
+  input
+    padding: 1rem 2rem
+    margin: 1.5rem auto
+    background: rgba($white-color, .5)
+    border: 0
+    border-radius: 3rem
+    display: block
+    width: 100%
+    &::placeholder
+      color: rgba(#fff, .8)
+    
+    &:focus
+      background: rgba(#fff, .3)
+      color: #fff
+      transition: .2s ease-in-out
+  
+  @media (min-width: $layout-breakpoint-small)
+    font-size: 1rem
+    input
+      width: 60%

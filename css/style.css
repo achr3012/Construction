@@ -503,4 +503,58 @@ section.plans *:hover {
   transition: 0.1s ease-in-out;
 }
 
+section.subscribe {
+  background: url(../images/newsletter.jpeg);
+  background-size: cover;
+  padding: 0;
+}
+section.subscribe .overlay {
+  background: linear-gradient(to bottom, rgba(255, 173, 0, 0.2), rgba(18, 18, 18, 0.7));
+  padding: 3rem 0;
+  text-align: center;
+}
+section.subscribe h2, section.subscribe p {
+  color: #fff;
+}
+section.subscribe input {
+  padding: 1rem 2rem;
+  margin: 1.5rem auto;
+  background: rgba(136, 138, 140, 0.5);
+  border: 0;
+  border-radius: 3rem;
+  display: block;
+  width: 100%;
+}
+section.subscribe input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+section.subscribe input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  section.subscribe {
+    font-size: 1rem;
+  }
+  section.subscribe input {
+    width: 60%;
+  }
+}
+
+section.clients ul li {
+  float: left;
+  width: 50%;
+  padding: 1rem 2rem;
+}
+@media (min-width: 768px) {
+  section.clients ul li {
+    padding: 1rem 6rem;
+  }
+}
+section.clients ul li a:hover {
+  opacity: 0.75;
+  transition: 0.3s ease-in-out;
+}
+
 /*# sourceMappingURL=style.css.map */
