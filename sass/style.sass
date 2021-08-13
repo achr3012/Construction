@@ -48,12 +48,22 @@ input, textarea
   border-radius: 3rem
   font-weight: 700
   text-align: center
+  transition: .2s ease-in-out
+  border: 2.5px solid rgba(#fff, .5)
+  &:hover
+    border-color: $base-color
 
 .btn-scn
-  border: 2px solid rgba(#fff, .5)
+  &:hover
+    background: $base-color
+    
 
 .btn-prm
   background: $base-color
+  border-color: $base-color
+  &:hover
+    background: transparent
+    color: $base-color
 
 body
   font-family: 'Raleway', sans-serif
@@ -66,7 +76,18 @@ body
 section
   padding: 2rem 0
   
+  .head
+    text-align: center
+    p
+      
+.secTitle
+  padding: 1.5rem 0
+  color: $black-color
+  font-weight: 400
+  font-size: 2em
+  
   
 @import templates/header
 @import templates/about
 @import templates/stats
+@import templates/services

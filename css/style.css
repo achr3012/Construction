@@ -52,14 +52,24 @@ input:hover, input:focus, textarea:hover, textarea:focus {
   border-radius: 3rem;
   font-weight: 700;
   text-align: center;
+  transition: 0.2s ease-in-out;
+  border: 2.5px solid rgba(255, 255, 255, 0.5);
+}
+.btn:hover {
+  border-color: #ffad00;
 }
 
-.btn-scn {
-  border: 2px solid rgba(255, 255, 255, 0.5);
+.btn-scn:hover {
+  background: #ffad00;
 }
 
 .btn-prm {
   background: #ffad00;
+  border-color: #ffad00;
+}
+.btn-prm:hover {
+  background: transparent;
+  color: #ffad00;
 }
 
 body {
@@ -76,6 +86,15 @@ body {
 
 section {
   padding: 2rem 0;
+}
+section .head {
+  text-align: center;
+}
+.secTitle, section.about .col h3 {
+  padding: 1.5rem 0;
+  color: #121212;
+  font-weight: 400;
+  font-size: 2em;
 }
 
 header.header nav.mainNav {
@@ -141,6 +160,7 @@ header.header nav#mainMenu {
   width: 75%;
   height: calc(100% - 55px);
   border: 5px solid #121212;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   header.header nav#mainMenu {
@@ -223,10 +243,7 @@ section.about .col {
   text-align: center;
 }
 section.about .col h3 {
-  padding: 1.5rem 0;
-  color: #121212;
   text-transform: uppercase;
-  font-weight: 400;
   font-size: 1.4em;
   position: relative;
 }
@@ -269,6 +286,57 @@ section.stats .row .big {
 section.stats .row .small {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.services .secTitle, .services section.about .col h3, section.about .col .services h3 {
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .services img {
+    height: 650px;
+    width: auto;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+}
+.services .service {
+  text-align: center;
+  padding: 2rem 0;
+}
+.services .service .icon {
+  display: inline-block;
+  margin: 0.3rem 0;
+  background: #ffad00;
+  color: #fff;
+  font-size: 2.2em;
+  border-radius: 50%;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+}
+.services .service .icon i {
+  padding-top: 1rem;
+}
+.services .service h3 {
+  padding: 1rem 0;
+  font-weight: 400;
+  color: #121212;
+}
+.services .service h3:hover {
+  color: #ffad00;
+}
+.services .service p {
+  padding: 0.5rem 0;
+  line-height: 1.7;
+}
+@media (min-width: 768px) {
+  .services .service {
+    float: left;
+    width: 50%;
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
