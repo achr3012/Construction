@@ -48,12 +48,12 @@ input:hover, input:focus, textarea:hover, textarea:focus {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 0.9rem 2rem;
   border-radius: 3rem;
   font-weight: 700;
   text-align: center;
   transition: 0.2s ease-in-out;
-  border: 2.5px solid rgba(255, 255, 255, 0.5);
+  border: 2.5px solid rgba(136, 138, 140, 0.6);
 }
 .btn:hover {
   border-color: #ffad00;
@@ -85,7 +85,7 @@ body {
 }
 
 section {
-  padding: 2rem 0;
+  padding: 2.5rem 0;
 }
 section .head {
   text-align: center;
@@ -227,7 +227,7 @@ header.header .hero .div p.small {
 }
 header.header .hero .btn {
   display: block;
-  padding: 1rem;
+  padding: 0.9rem;
   width: 200px;
   margin: 1rem auto;
 }
@@ -420,6 +420,87 @@ section.blog .post .more {
 }
 section.blog .post .more:hover {
   color: #888a8c;
+}
+
+section.plans {
+  background: rgba(136, 138, 140, 0.1);
+}
+section.plans .plan {
+  background: #fff;
+  text-align: center;
+  margin: 3rem 1.5rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  section.plans .plan {
+    width: calc(50% - 9rem);
+    float: left;
+    margin: 2rem 4.5rem;
+  }
+  section.plans .plan li {
+    font-size: 0.9rem;
+  }
+}
+section.plans .plan h4, section.plans .plan h2 {
+  font-weight: 400;
+}
+section.plans .plan h4 {
+  padding-top: 2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+section.plans .plan h2 {
+  padding: 1rem 0 2rem 0;
+  font-size: 3rem;
+  color: #121212;
+}
+section.plans .plan h2 sup {
+  font-size: 1.3rem;
+  padding: 0 0.3rem;
+}
+section.plans .plan h2 sup:nth-child(even) {
+  vertical-align: baseline;
+}
+section.plans .plan ul li {
+  padding: 0.8rem 0;
+  border-top: 1px solid rgba(136, 138, 140, 0.2);
+  color: rgba(136, 138, 140, 0.8);
+}
+section.plans .plan ul li:first-child, section.plans .plan ul li:last-child {
+  border: none;
+}
+section.plans .plan ul li:last-child {
+  padding: 0;
+}
+section.plans .plan ul li:last-child a {
+  background: #ffad00;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  padding: 0.8rem 0;
+  text-decoration: none;
+}
+section.plans .plan ul li:last-child:hover {
+  background: #ffad00;
+  color: #fff;
+}
+section.plans .plan:hover {
+  background: #ffad00;
+}
+section.plans .plan:hover h4, section.plans .plan:hover h2, section.plans .plan:hover li {
+  color: #fff;
+}
+section.plans .plan:hover ul li a {
+  color: #121212;
+  background: #fff;
+}
+section.plans .plan:hover ul li a:hover {
+  color: #fff;
+  background: #ffad00;
+}
+section.plans *:hover {
+  transition: 0.1s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

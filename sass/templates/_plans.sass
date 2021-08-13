@@ -1,0 +1,72 @@
+section.plans
+  background: rgba($white-color, .1)
+  
+  .plan
+    background: #fff
+    text-align: center
+    margin: 3rem 1.5rem
+    border-radius: 1.5rem
+    overflow: hidden
+  
+    @media (min-width: $layout-breakpoint-small)
+      width: calc(50% - 9rem)
+      float: left
+      margin: 2rem 4.5rem
+      
+      li
+        font-size: .9rem
+    
+    
+    
+    h4, h2
+      font-weight: 400
+    
+    h4
+      padding-top: 2rem
+      text-transform: uppercase
+      font-size: 1.2rem
+    
+    h2
+      padding: 1rem 0 2rem 0
+      font-size: 3rem
+      color: $black-color
+      sup
+        font-size: 1.3rem
+        padding: 0 .3rem
+      
+        &:nth-child(even)
+          vertical-align: baseline
+    
+    ul li
+      padding: .8rem 0
+      border-top: 1px solid rgba($white-color, .2)
+      color: rgba($white-color, .8)
+    
+      &:first-child,
+      &:last-child
+        border: none
+
+      &:last-child
+        padding: 0
+        a
+          background: $base-color
+          color: #fff
+          font-weight: 700
+          display: block
+          padding: .8rem 0
+          text-decoration: none
+        &:hover
+          background: $base-color
+          color: #fff
+    &:hover
+      background: $base-color
+      h4, h2, li
+        color: #fff
+      ul li a
+        color: $black-color
+        background: #fff
+        &:hover
+          color: #fff
+          background: $base-color
+  *:hover
+    transition: .1s ease-in-out
