@@ -90,6 +90,7 @@ section {
 section .head {
   text-align: center;
 }
+
 .secTitle, section.about .col h3 {
   padding: 1.5rem 0;
   color: #121212;
@@ -337,6 +338,38 @@ section.info .row .small {
     margin: 1rem 0;
     padding: 0 1rem;
   }
+}
+
+.stats {
+  background: rgba(136, 138, 140, 0.1);
+}
+.stats .stat {
+  padding: 1rem 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .stats .stat {
+    float: left;
+    width: 50%;
+  }
+}
+.stats .stat .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #ffad00;
+  margin: 1rem auto;
+}
+.stats .stat .circle p {
+  line-height: 200px;
+  font-size: 2.6rem;
+  color: #121212;
+}
+.stats .stat h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 1rem;
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
