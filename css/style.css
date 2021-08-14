@@ -73,7 +73,7 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    font-size: 0.4em;
+    font-size: 1rem;
   }
 }
 
@@ -185,6 +185,9 @@ header.header nav#mainMenu > ul > li ul {
 header.header nav#mainMenu > ul > li ul a {
   color: #888a8c;
 }
+header.header nav#mainMenu > ul > li ul a:hover {
+  color: #fff;
+}
 header.header .hero {
   margin-top: 55px;
   background-image: url(../images/home-parallax.jpg);
@@ -201,6 +204,7 @@ header.header .hero .div {
 @media (min-width: 768px) {
   header.header .hero .div {
     padding-bottom: 0;
+    font-size: 0.43rem;
   }
 }
 header.header .hero .div h1 {
@@ -253,6 +257,11 @@ section.about .col h3:after {
 section.about .col p {
   padding: 1.5rem 0;
   line-height: 1.7;
+}
+@media (min-width: 768px) {
+  section.about {
+    font-size: 0.43rem;
+  }
 }
 
 section.info {
@@ -527,9 +536,6 @@ section.subscribe input:focus {
   transition: 0.2s ease-in-out;
 }
 @media (min-width: 768px) {
-  section.subscribe {
-    font-size: 1rem;
-  }
   section.subscribe input {
     width: 60%;
   }
@@ -542,7 +548,7 @@ section.clients ul li {
 }
 @media (min-width: 768px) {
   section.clients ul li {
-    padding: 1rem 6rem;
+    padding: 1rem 8rem;
   }
 }
 section.clients ul li a:hover {
@@ -561,7 +567,6 @@ footer.footer .left {
   footer.footer .left {
     float: left;
     width: 50%;
-    font-size: 1rem;
     text-align: left;
     padding: 4rem 2rem;
   }
