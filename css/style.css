@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Raleway:700,400,300);
 * {
   box-sizing: border-box;
@@ -17,14 +18,6 @@
 
 .clearfix {
   clear: both;
-}
-
-.show {
-  display: block !important;
-}
-
-.hide {
-  display: none;
 }
 
 img {
@@ -555,6 +548,119 @@ section.clients ul li {
 section.clients ul li a:hover {
   opacity: 0.75;
   transition: 0.3s ease-in-out;
+}
+
+footer.footer {
+  background: #121212;
+}
+footer.footer .left {
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer.footer .left {
+    float: left;
+    width: 50%;
+    font-size: 1rem;
+    text-align: left;
+    padding: 4rem 2rem;
+  }
+  footer.footer .left img {
+    width: 75%;
+  }
+}
+footer.footer .left img {
+  width: 85%;
+}
+footer.footer .left .desc {
+  color: rgba(255, 255, 255, 0.75);
+}
+footer.footer .left .addr {
+  padding: 2rem 0;
+  color: #fff;
+  line-height: 1.7;
+}
+footer.footer .left .info {
+  padding: 5px;
+}
+footer.footer .left .info span {
+  padding: 0 5px;
+}
+footer.footer .left .info span:hover {
+  color: #ffad00;
+}
+footer.footer .left .row {
+  padding: 2rem 0 0rem 0;
+  text-align: center;
+}
+footer.footer .left .row div {
+  display: inline-block;
+  padding: 0 5px;
+}
+footer.footer .left .row div .big {
+  font-size: 2rem;
+  color: #ffad00;
+}
+footer.footer .left .row div .small {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 5px;
+}
+footer.footer .left .secTitle, footer.footer .left section.about .col h3, section.about .col footer.footer .left h3 {
+  color: #fff;
+  padding: 0;
+  text-align: left;
+}
+footer.footer .left ul {
+  padding: 1.5rem 3rem;
+  text-align: left;
+}
+footer.footer .left ul li {
+  position: relative;
+}
+footer.footer .left ul li::before {
+  content: "";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 10px;
+  left: -1rem;
+  color: #ffad00;
+  font-size: 0.75rem;
+}
+footer.footer .left ul li a {
+  color: #ffad00;
+  display: inline-block;
+  padding: 6px 1rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+footer.footer .left ul li a:hover {
+  color: #fff;
+}
+footer.footer .copy {
+  background: white;
+  color: #121212;
+  text-align: center;
+  padding: 2rem;
+}
+footer.footer .copy p a {
+  color: #ffad00;
+  font-weight: 700;
+}
+footer.footer .copy ul {
+  margin-top: 1rem;
+}
+footer.footer .copy ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+footer.footer .copy ul li a {
+  color: #121212;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+footer.footer .copy ul li a:hover {
+  color: #ffad00;
 }
 
 /*# sourceMappingURL=style.css.map */

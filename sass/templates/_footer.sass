@@ -1,0 +1,93 @@
+footer.footer
+  background: $black-color
+  
+  
+  .left
+    padding: 2.5rem 1rem
+    text-align: center
+    @media (min-width: $layout-breakpoint-small)
+      float: left
+      width: 50%
+      font-size: 1rem
+      text-align: left
+      padding: 4rem 2rem
+      img
+        width: 75%
+    
+    img
+      width: 85%
+    .desc
+      color: rgba(#fff, .75)
+    .addr
+      padding: 2rem 0
+      color: #fff
+      line-height: 1.7
+    .info
+      padding: 5px
+      span
+        padding: 0 5px
+        &:hover
+          color: $base-color
+    
+    .row
+      padding: 2rem 0 0rem 0
+      text-align: center
+      div
+        display: inline-block
+        padding: 0 5px
+        .big
+          font-size: 2rem
+          color: $base-color
+        .small
+          font-size: .7rem
+          color: rgba(#fff, .75)
+          padding: 5px
+    .secTitle
+      color: #fff
+      padding: 0
+      text-align: left
+    
+    ul 
+      padding: 1.5rem 3rem
+      text-align: left
+      li
+        position: relative
+        &::before
+          content: "\f054"
+          font-family: FontAwesome
+          position: absolute
+          top: 10px
+          left: -1rem
+          color: $base-color
+          font-size: .75rem
+          
+        a
+          color: $base-color
+          display: inline-block
+          padding: 6px 1rem
+          font-size: 1.1rem
+          text-decoration: none
+          &:hover
+            color: #fff
+          
+  
+  .copy
+    background: rgba(#fff, 1)
+    color: $black-color
+    text-align: center
+    padding: 2rem
+    
+    p a 
+      color: $base-color
+      font-weight: 700
+    ul
+      margin-top: 1rem
+      li
+        display: inline-block
+        margin: 0 5px
+        a
+          color: $black-color
+          text-decoration: none
+          font-size: 1.4rem
+          &:hover
+            color: $base-color
